@@ -1,0 +1,44 @@
+html {
+    font: 16px/1.5 Playfair Display, Helvetica, Verdana, sans-serif;
+}
+
+body, input, textarea, option, select, table, form {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.1;
+    padding-bottom: 0.5em;
+}
+
+h1 {size: 2.5em;}
+h2 {size: 2.1em;}
+h3 {size: 1.75em;}
+h4 {size: 1.45em;}
+h5 {size: 1.2em;}
+h6 {size: 1em;}
+
+p, ul, ol, blockquote {
+    padding-bottom: 1.5em;
+}
+
+ul, ol {
+    padding-left: 2em;
+}
+
+blockquote{
+    padding-left: 2rem;
+    font-style: italic;
+    opacity: 0.6;
+    font-family: serif;
+}
+
+blockquote p:last-child {
+    padding-bottom: 0;
+}
+
+li {
+    list-style: disc outside;
+    padding-left: 1rem;
+}
