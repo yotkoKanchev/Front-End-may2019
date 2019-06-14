@@ -1,0 +1,37 @@
+@import url(navigation.css);
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+.site-header {
+    border-bottom: 1px solid black;
+}
+
+.cleaner:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+main {
+    background: #EEE;
+    overflow: hidden;  /*- not recommended */
+}
+
+.site-main {
+    width: 60%;
+    float: left;
+}
+
+.site-sidebar {
+    width: 40%;
+    float: left;
+}
+
+.site-footer{
+    border-top: 1px solid black;
+}

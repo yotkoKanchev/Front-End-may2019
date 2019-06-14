@@ -1,0 +1,28 @@
+nav ul {
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+nav ul li {
+    display: block;
+    list-style: non outside;
+    color: white;   
+    float: left;
+    padding: 0.5em;
+}
+
+.site-main img.align-left {
+    float: left;
+    margin: 0.5em 0.5rem 0.5rem 0;
+    pad:  0.4em;
+    border : 2px solid white;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+}
+
+p{
+    padding:  0 0 0.5em 0;
+}
+
+
