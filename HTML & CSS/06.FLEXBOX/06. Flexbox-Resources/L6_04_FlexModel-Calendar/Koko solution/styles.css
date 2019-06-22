@@ -1,0 +1,29 @@
+.container {
+    max-width: 60rem;
+    margin: 5rem auto;
+    display: flex;
+    border: solid 1px #000;
+
+}
+
+.container .item {
+    border: solid 1px #000;
+    flex-grow: 1;
+    text-align: center;
+    padding: 1rem 0 5rem 0;
+}
+
+.container .item-grow {
+    flex-basis: 100%;
+}
+
+.container .week {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .notes {
+    display: flex;
+    flex-direction: column;
+}
