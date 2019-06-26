@@ -1,0 +1,83 @@
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.2 Montserrat, sans-serif;
+}
+
+body, form ,select, input, textarea, option {
+    font: inherit;
+}
+
+form {
+    max-width: 40rem;
+    max-height: 80rem;
+    margin: 1rem auto;
+    background: rgb(173, 216, 230);
+    border-radius: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+form h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+form p{
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+}
+
+form label {
+    padding-right: 1rem;
+    min-width: 10rem;
+}
+
+input, select {
+    width: 18.7em;
+}
+
+#male, #female , #contact_concent{
+    width: 2rem;
+}
+
+.send-button {
+    width: 8em;
+    border-radius: 0.3em;
+}
+
+textarea {
+    margin-bottom: 2rem;
+}
+
+p .centred {
+    height: 2em;
+}
+
+form input[type="submit"] {
+    padding: 0.7rem 1rem;
+    background: #369;
+    color: #FFF;
+    border-radius: 0.3em;
+    border: 2px solid #369;
+    cursor: pointer;    
+    margin: 1em auto;
+}
+
+form input[type="submit"]:hover, 
+form input[type="submit"]:focus {
+    background: #FFF;
+    color: #369;
+}
