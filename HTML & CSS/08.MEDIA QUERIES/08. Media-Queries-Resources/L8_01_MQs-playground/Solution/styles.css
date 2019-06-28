@@ -1,0 +1,34 @@
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.mq-width:after {
+    content : " Viewport width is lager than 600px";
+}
+
+.mq-height:after {
+    content : " Viewport height is lager than 600px";
+}
+
+.mq-ar:after {
+    content : " Aspect Ratio is lager than 8/5";
+}
+
+@media (max-width: 600px){
+    .mq-width:after {
+        color: rgb(0,100,82);
+    }
+}
+
+@media (max-height: 600px){
+    .mq-height:after {
+        color: rgb(0,100,82);
+    }
+}
+
+@media (aspect-ratio: 8/5){
+    .mq-ar:after {
+        color: rgb(0,100,82);
+    }
+}
