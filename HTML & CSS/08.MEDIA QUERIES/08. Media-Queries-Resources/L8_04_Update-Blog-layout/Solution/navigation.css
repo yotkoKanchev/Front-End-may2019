@@ -1,0 +1,114 @@
+.nav {
+    display: block;
+    margin-left: auto;
+    background: #FFF;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0.5em;
+}
+
+.nav li {
+    display: block;
+    list-style: none outside;
+}
+
+.nav a {
+    display: block;
+    background: #000;
+    color: #FFF;
+    border-radius: 0.3em;
+    line-height: 1;
+}
+
+.nav > ul {
+    display: flex;
+}
+
+.nav > ul > li {
+    padding: 0 0.5em;
+}
+
+.nav > ul > li > a{
+    padding: 0.5em 1em;
+    border : 1px solid #000;
+    outline: none;
+}
+
+.nav > ul > li > a:focus,
+.nav > ul > li > a:hover{
+    background: #FFF;
+    color: #369;
+    border : 1px solid #369;
+}
+
+/* if we want to higlite the focused element */
+.nav > ul > li > a:focus{
+    text-decoration: underline;
+}
+
+/* Mobile nav logic */
+
+.nav-toggle {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;    
+}
+
+.nav-toggle-button {
+    display: none;
+    margin-left: auto;
+}
+
+/* Phones */
+@media (max-width: 600px){
+    .site {
+        border :none;
+    }
+
+    .nav-toggle-button {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-toggle-button .close {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+
+    .nav > ul {
+        display: block;
+    }
+
+    .nav > ul > li {
+        padding: 0.5em;
+    }
+
+    .nav > ul > li a {
+        text-align: center;
+        padding: 1em;
+    }
+
+    .nav-toggle + .site-header {
+        display: block;
+    }
+    
+    .nav-toggle:checked + .site-header .nav {
+        display: block;
+    }
+
+    /* .nav-toggle:checked + .site-header .nav-toggle-button .open {
+        display: none;
+    } */
+
+    .nav-toggle:checked + .site-header .nav-toggle-button .close {
+        display: block;
+        padding-right: 0.5em;
+    }
+
+}
