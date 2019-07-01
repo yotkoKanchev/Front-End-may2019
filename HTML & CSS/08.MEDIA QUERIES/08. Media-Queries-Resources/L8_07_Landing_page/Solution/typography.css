@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|Merriweather:400,400i,700,700i&display=swap');
+
+html {
+    box-sizing: border-box;
+    font: 14px/1.5 Fira Sans, serif;
+}
+
+@media (min-width: 600px){
+    html {font-size: 16px;}
+}
+
+@media (min-width: 1024px){
+    html {font-size: 18px;}
+}
+
+@media (min-width: 1600px){
+    html {font-size: 20px;
+    }
+}
+
+body, input, textarea, option, select, table, form {
+    font: inherit;
+}
+
+.site-title,
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+    /* font-family: Playfair Display, Helvetica, sans-serif; */
+    /* line-height: 1.1; */
+    /* padding: 1em 0; */
+    font-family: Merriweather, serif;
+}
+
+h1 { font-size: 2.6em; }
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+
+p, ul, ol, blockquote {
+    padding-bottom: 1.5em;
+}
+
+ul, ol {
+    padding-left: 2em;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+ol > li > ol > li {
+    list-style-type: lower-roman;
+}
+
+li ul li ul li {
+    list-style-type: square;
+}
+
+blockquote {
+    padding-left: 1rem;
+    font-style: italic;
+    opacity: 0.8;
+    font-family: serif;
+}
+
+blockquote p:last-child {
+    padding-bottom: 0;
+    text-align: right;
+    opacity: 0.5;
+}

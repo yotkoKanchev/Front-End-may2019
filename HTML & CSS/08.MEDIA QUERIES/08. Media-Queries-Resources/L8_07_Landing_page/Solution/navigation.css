@@ -1,0 +1,105 @@
+.site-nav {
+
+}
+
+.site-nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.site-nav li {
+    display: block;
+    list-style: none outside;
+    padding: 0 0.5em;
+}
+
+.site-nav a{
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    color: #000;
+    text-decoration: none;
+    outline: none;
+}
+
+@media (min-width: 900px) {
+    .site-nav a:hover,
+    .site-nav a:focus {
+        color: #FFF;
+        background: purple;
+    }
+}
+
+.site-nav a:focus {
+    text-decoration: underline;
+}
+
+.site-nav > ul {
+    display: flex;
+}
+
+.nav-toggle {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;    
+}
+
+.nav-toggle-button {
+    display: none;
+    margin-left: auto;
+}
+
+@media (max-width: 900px){
+
+    body {
+       border: none;
+    }
+
+    .site-header .wrapper {
+        display: block;
+    }
+
+    .nav-toggle-button {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-toggle-button .close {
+        display: none;
+    }
+
+    .site-nav {
+        display: none;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+
+    .site-nav > ul {
+        display: block;
+    }
+
+    .site-nav > ul > li {
+        padding: 0.5em;
+    }
+    
+    .site-nav > ul > li a {
+        background: purple;
+        border-radius: 0.3em;
+        color: #FFF;    
+        text-align: center;
+        padding: 1em;
+    }
+
+    .nav-toggle + .site-header {
+        display: block;
+    }
+    
+    .nav-toggle:checked + .site-header .site-nav {
+        display: block;
+    }
+
+    .nav-toggle:checked + .site-header .nav-toggle-button .close {
+        display: inline-block;
+        padding-right: 0.5em;
+    }
+}
