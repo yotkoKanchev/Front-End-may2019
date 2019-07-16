@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    width: 45rem;
+    margin: 2rem auto;
+}
+
+.site-title {
+    text-align: center;
+}
+
+.main-heading {
+    font-style: italic;
+}
+
+h1, h3 {
+    padding-bottom: 1.5em;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+p{
+    font-size: var(--font-size-p);
+    padding-bottom: 1em;
+}
