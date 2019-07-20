@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(234,234,238);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.buttons-holder {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    padding: 1em 1.5em;
+    font-weight: bold;
+    border: 2px solid darkblue;
+    transition: border-width 0.3s ease-in;
+}
+/* 
+a:before {
+
+} */
+a:hover {
+    border-width: 5px;
+}
+
+/* @keyframes border-grow {
+    0%  {
+        border-top-width: 
+    }
+
+    100%  {
+        border: 5px solid darkblue;
+    }
+} */
